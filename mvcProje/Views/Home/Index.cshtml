@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model DataModell
+<form asp-action="PostDataToApi" asp-controller="Home">
+    <input asp-for="id" />
+    <input asp-for="name" />
+    <button type="submit">add</button>
+</form>
